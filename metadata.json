@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Dr1 Gene Hospital Website",
+  "description": "A premium, modern multi-speciality clinical website for Dr1 Gene Hospital featuring appointment scheduling and comprehensive diagnostics pricing matrices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
