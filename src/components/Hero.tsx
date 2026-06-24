@@ -1,4 +1,4 @@
-import { Phone, MessageSquare, Star } from "lucide-react";
+import { Phone, MessageSquare } from "lucide-react";
 import { ActivePage } from "../types";
 import { HOSPITAL_CONTACT } from "../data";
 
@@ -70,23 +70,7 @@ export default function Hero({ onPageChange }: HeroProps) {
           </button>
         </div>
 
-        {/* Direct Google Rating Highlight */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 border-t border-slate-200/60 pt-6 w-full max-w-md">
-          <div className="flex -space-x-2">
-            <img className="w-9 h-9 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="patient avatar" />
-            <img className="w-9 h-9 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" alt="patient avatar" />
-            <img className="w-9 h-9 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100&h=100" alt="patient avatar" />
-          </div>
-          <div className="text-left sm:text-left flex flex-col items-center sm:items-start">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
-              ))}
-              <span className="text-slate-800 text-sm font-extrabold ml-1">4.9/5</span>
-            </div>
-            <p className="text-slate-400 text-xs font-semibold">Based on 250+ local Google patient reviews</p>
-          </div>
-        </div>
+
 
       </div>
     </section>

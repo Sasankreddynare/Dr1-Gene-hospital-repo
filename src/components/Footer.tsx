@@ -81,7 +81,6 @@ export default function Footer({ onPageChange }: FooterProps) {
         {/* Subfooter */}
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] font-semibold text-slate-400">
           <p>© {new Date().getFullYear()} Dr1 Gene Hospital. All rights reserved.</p>
-          <p>Designed and optimized for high-conversion medical booking. Beside OWIS, Bangalore.</p>
         </div>
 
       </div>
