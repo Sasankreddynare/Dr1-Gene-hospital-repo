@@ -287,60 +287,6 @@ export default function HomeView({ onPageChange, setSelectedServiceId }: HomeVie
         </div>
       </section>
 
-      {/* 5. Home Healthcare Services Section */}
-      <section className="py-20 bg-[#F8FAFC] border-y border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-extrabold text-blue-600 uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full">Bedside Care</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-6">
-              Home Healthcare Services
-            </h2>
-            <p className="text-slate-500 font-medium mt-4 leading-relaxed text-sm">
-              We bring clinical precision and expert care of registered nurses directly to your home. Say goodbye to traffic and long waiting lines.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {HOME_CARE_DATA.map((hc) => {
-              const IconComp = getHomeCareIcon(hc.icon);
-              return (
-                <div
-                  key={hc.id}
-                  className="bg-white rounded-2xl p-7 border border-slate-200/80 hover:shadow-md hover:border-slate-300 transition-all duration-300 flex gap-5 items-start group text-left"
-                >
-                  <div className="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100/20 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                    <IconComp className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900 mb-2 tracking-tight group-hover:text-blue-600 transition-colors">
-                      {hc.title}
-                    </h3>
-                    <p className="text-slate-500 text-xs leading-relaxed font-semibold">
-                      {hc.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="mt-12 text-center">
-            <button
-              onClick={() => {
-                const text = encodeURIComponent("Hello! I am inquiring about Home Healthcare nursing services (e.g. injection, ECG, dressing at home).");
-                window.open(`https://wa.me/919035054532?text=${text}`, "_blank");
-              }}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs tracking-wider uppercase rounded-full shadow-lg shadow-emerald-200 transition"
-            >
-              <MessageSquare className="w-4 h-4 fill-white" />
-              <span>Inquire via WhatsApp</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-
-
       {/* 7. CTA Driving Panel - Beautiful Dark Minimalist Card */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
