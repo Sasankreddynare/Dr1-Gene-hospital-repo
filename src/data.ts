@@ -16,67 +16,80 @@ export const HOSPITAL_CONTACT = {
 export const DOCTORS_DATA: Doctor[] = [
   {
     id: "dr-jayaprasad",
-    name: "Dr (Major) Jayaprasad V",
-    specialty: "Cardiology",
+    name: "Dr (Major) JAYAPRASAD V",
+    specialty: "CARDIOLOGIST",
     qualifications: ["MBBS", "MD (General Medicine)", "DNB in Cardiology"],
-    experience: "15+ Years Experience (Ex-Army Major)",
-    bio: "Ex-Military physician and dedicated cardiologist specializing in preventive cardiology, coronary artery disease, heart failure management, and advanced cardiac diagnostic procedures.",
-    imageUrl: "/dr_jayaprasad_v.jpg"
+    skills: ["General Medicine", "Cardiac Diagnostics", "Hypertension Care", "Heart Care"]
   },
   {
     id: "dr-vinay",
-    name: "Dr Vinay Kumar M",
-    specialty: "Pediatrics",
-    qualifications: ["MBBS", "MD Pediatrics"],
-    experience: "10+ Years Experience",
-    bio: "Expert pediatrician focusing on neonatal care, childhood nutrition, growth tracking, immunization programs, and pediatric emergency support.",
-    imageUrl: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400&h=450"
+    name: "Dr VINAY KUMAR M",
+    specialty: "PEDIATRICS",
+    qualifications: ["MBBS", "M.D. PEDIATRICS"],
+    skills: ["Pediatric Care", "Childhood Nutrition", "Neonatal Care"]
   },
   {
     id: "dr-krishna",
-    name: "Dr G Krishna Naresh Goud",
-    specialty: "Orthopedics",
-    qualifications: ["MBBS", "DNB Ortho", "D.Ortho", "FAMS (New Delhi)", "FIJR’S (Korea)"],
-    experience: "12+ Years Experience",
-    bio: "Specialist in Joint Replacements, complex fracture fixations, sports medicine, and arthroscopy with international training in South Korea.",
-    imageUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400&h=450"
+    name: "Dr. G. KRISHNA NARESH GOUD",
+    specialty: "ORTHOPEDIC",
+    qualifications: ["MBBS", "DNB (Ortho)", "D.ORTHO", "FAMS (New Delhi)", "FIJR (S Korea)"],
+    skills: ["Joint Replacement", "Complex Fracture Fixation", "Sports Medicine", "Arthroscopy"]
   },
   {
     id: "dr-jayaram",
-    name: "Dr Jayaram Gowda S",
-    specialty: "ENT",
-    qualifications: ["MBBS", "DLO (Diploma in Otorhinolaryngology)", "ENT Specialist"],
-    experience: "14+ Years Experience",
-    bio: "Comprehensive ENT care specializing in micro-ear surgery, sinus treatments, voice disorders, and advanced allergic conditions management.",
-    imageUrl: "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=400&h=450"
+    name: "Dr. JAYARAM GOWDA S",
+    specialty: "E N T",
+    qualifications: ["MBBS", "Diploma in Otorhinolaryngology (DLO)", "ENT / Otorhinolaryngologist"],
+    skills: ["Micro-Ear Surgery", "Sinus Treatments", "Allergy Management"]
   },
   {
     id: "dr-srinivas",
-    name: "Dr Srinivas K S",
-    specialty: "Dentist",
+    name: "Dr SRINIVAS K S",
+    specialty: "DENTIST",
     qualifications: ["BDS", "MDS", "AFLD"],
-    experience: "8+ Years Experience",
-    bio: "Expert in cosmetic dentistry, dental implants, root canal treatments, and preventative pediatric dental protocols.",
-    imageUrl: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=400&h=450"
+    skills: ["Cosmetic Dentistry", "Root Canal Treatments", "Dental Implants"]
   },
   {
     id: "dr-anil",
-    name: "Dr Anil Kumar PT",
-    specialty: "Physiotherapy",
-    qualifications: ["BPT", "MPT", "PG Diploma Fitness & Sports", "CAPES", "CPRS", "CMT", "CDN", "CEDN"],
-    experience: "11+ Years Experience",
-    bio: "Highly qualified physiotherapist specializing in sports injury rehabilitation, post-surgical recovery, pediatric & geriatric mobility restoration.",
-    imageUrl: "https://images.unsplash.com/photo-1606166325683-e6deb697d30a?auto=format&fit=crop&q=80&w=400&h=450"
+    name: "Dr ANIL KUMAR (PT)",
+    specialty: "PHYSIOTHERAPY",
+    qualifications: ["BPT", "MPT", "P.G. DIPLOMA FITNESS & SPORTS", "CAPES, CPRS, CMT, CDN, CEDN"],
+    skills: ["Sports Physical Therapy", "Post-Surgical Rehab", "Neuromuscular Training"]
   },
   {
     id: "dr-sushma",
-    name: "Dr Sushma A",
+    name: "Dr. Sushma A",
     specialty: "Consultant Dermatologist",
-    qualifications: ["MBBS", "MD Dermatology / DNB Dermatology equivalent"],
-    timings: "Mon, Wed, Fri: 2 PM - 4 PM & 6 PM - 9 PM | Tue, Thu, Sat: 6 PM - 9 PM",
-    experience: "9+ Years Experience",
-    bio: "Expert dermatologist specializing in clinical skin disorders, advanced aesthetic procedures, laser hair removal, anti-aging therapies, and hair loss solutions.",
-    imageUrl: "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=400&h=450"
+    qualifications: ["Consultant Dermatologist"],
+    timings: "Monday, Wednesday & Friday: 2PM to 4PM & 6PM to 9PM | Tuesday, Thursday & Saturday: 6PM to 9PM",
+    skinProblems: [
+      "Psoriasis",
+      "Vitiligo",
+      "Melasma and Freckles",
+      "Hair Fall Problem",
+      "Dandruff",
+      "Dark Spot on Face",
+      "Acne and Acne Scars",
+      "Skin problem in Children",
+      "Sexually Transmitted Disease",
+      "Cosmetic Treatment",
+      "Leprosy",
+      "Fungal Infection",
+      "Scabies and Head Lice"
+    ],
+    skinProcedures: [
+      "LASER HAIR REMOVAL",
+      "RADIO FREQUENCY TREATMENT",
+      "ELECTRO CAUTERY",
+      "CHEMICAL PEELING",
+      "PRP/ GFC TREATMENT",
+      "NAIL SURGERY",
+      "CYST/ LIPOMA EXCISION",
+      "SKIN TAG/ WART/ CORN REMOVAL",
+      "VITILIGO SURGERY",
+      "TATTOO REMOVAL"
+    ],
+    skills: ["Skin Related Problems", "Skin Related Procedures"]
   }
 ];
 

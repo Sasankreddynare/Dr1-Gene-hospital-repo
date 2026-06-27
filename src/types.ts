@@ -4,9 +4,12 @@ export interface Doctor {
   specialty: string;
   qualifications: string[];
   timings?: string;
-  imageUrl: string;
+  imageUrl?: string;
   experience?: string;
   bio?: string;
+  skills?: string[];
+  skinProblems?: string[];
+  skinProcedures?: string[];
 }
 
 export interface Service {

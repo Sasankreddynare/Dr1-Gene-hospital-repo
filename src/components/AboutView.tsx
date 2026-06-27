@@ -161,93 +161,116 @@ export default function AboutView() {
       {/* OUR TEAM Section (Faithful to Images) */}
       <div id="our-clinical-team" className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold text-blue-600 uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full">Medical Board</span>
+          <span className="text-xs font-extrabold text-blue-600 uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full">Our Team</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-6">
             Meet Our Expert Clinical Team
           </h2>
           <p className="text-slate-500 font-medium mt-4 leading-relaxed text-sm">
-            Highly certified consultants, former military medical officers, and advanced clinical specialists dedicated to providing top-tier patient care.
+            Highly qualified consultants, former military medical officers, and specialists dedicated to providing top-tier patient care.
           </p>
         </div>
 
+        {/* Seven Doctors Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {DOCTORS_DATA.map((doctor) => (
-            <div
-              key={doctor.id}
-              className="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-slate-300 overflow-hidden flex flex-col justify-between group transition-all duration-300 text-left"
-            >
-              {doctor.imageUrl && (
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 border-b border-slate-200/40">
-                  <img
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    src={doctor.imageUrl}
-                    alt={doctor.name}
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
-                </div>
-              )}
-              <div className="p-6 md:p-8">
-                {/* Specialty Badge */}
-                <div className="mb-4">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-extrabold uppercase tracking-wider rounded-md border border-blue-100/50">
-                    {doctor.specialty}
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-extrabold text-slate-900 tracking-tight leading-tight mb-2 group-hover:text-blue-600 transition-colors">
-                  {doctor.name}
-                </h3>
-
-                {/* Experience */}
-                {doctor.experience && (
-                  <p className="text-xs font-bold text-slate-500 mb-4 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
-                    {doctor.experience}
-                  </p>
-                )}
-
-                {/* Qualifications list */}
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {doctor.qualifications.map((qual, idx) => (
-                    <span
-                      key={idx}
-                      className="px-2.5 py-1 bg-slate-50 text-slate-600 text-[10px] font-extrabold border border-slate-200/60 rounded-md uppercase"
-                    >
-                      {qual}
+          {DOCTORS_DATA.map((doctor) => {
+            const isDerm = doctor.id === "dr-sushma";
+            return (
+              <div
+                key={doctor.id}
+                className={`bg-white rounded-2xl border border-slate-200 shadow-sm p-6 md:p-8 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-md hover:border-slate-300 ${
+                  isDerm ? "md:col-span-2 lg:col-span-3 border-emerald-100 bg-emerald-50/5" : ""
+                }`}
+              >
+                <div>
+                  {/* Specialty Badge */}
+                  <div className="mb-4">
+                    <span className={`px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider rounded-md border ${
+                      isDerm 
+                        ? "bg-emerald-50 text-emerald-700 border-emerald-200" 
+                        : "bg-blue-50 text-blue-700 border-blue-200"
+                    }`}>
+                      {doctor.specialty}
                     </span>
-                  ))}
+                  </div>
+
+                  {/* Name */}
+                  <h3 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight leading-tight mb-3">
+                    {doctor.name}
+                  </h3>
+
+                  {/* Qualifications */}
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {doctor.qualifications.map((qual, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2.5 py-1 bg-slate-100 text-slate-700 text-[10px] font-bold border border-slate-200 rounded-md"
+                      >
+                        {qual}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Dermatology Specific Skills Lists */}
+                  {isDerm && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-200">
+                      <div>
+                        <h4 className="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-3 flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                          Skin Related Problems
+                        </h4>
+                        <ul className="space-y-1 text-slate-600 text-xs font-semibold">
+                          {doctor.skinProblems?.map((prob, i) => (
+                            <li key={i} className="flex items-center gap-2">
+                              <span className="text-emerald-500">•</span>
+                              {prob}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-3 flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                          Skin Related Procedures
+                        </h4>
+                        <ul className="space-y-1 text-slate-600 text-xs font-semibold">
+                          {doctor.skinProcedures?.map((proc, i) => (
+                            <li key={i} className="flex items-center gap-2">
+                              <span className="text-emerald-500">•</span>
+                              {proc}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Timings */}
+                  {doctor.timings && (
+                    <div className="mt-4 pt-4 border-t border-slate-200">
+                      <p className="text-[10px] font-extrabold text-emerald-700 uppercase tracking-wider mb-1">Available Timings:</p>
+                      <p className="text-xs font-bold text-slate-800 leading-normal bg-emerald-50 border border-emerald-100 px-3 py-2 rounded-xl">
+                        {doctor.timings}
+                      </p>
+                    </div>
+                  )}
                 </div>
 
-                {/* Bio */}
-                {doctor.bio && (
-                  <p className="text-slate-500 text-xs font-semibold leading-relaxed mb-2">
-                    {doctor.bio}
-                  </p>
-                )}
-
-                {doctor.timings && (
-                  <div className="mt-4 pt-4 border-t border-slate-100">
-                    <p className="text-[10px] font-extrabold text-blue-600 uppercase tracking-wider mb-1">Timing Slots:</p>
-                    <p className="text-[11px] font-bold text-slate-700 leading-normal">{doctor.timings}</p>
-                  </div>
-                )}
+                {/* Book Action */}
+                <div className="mt-6 pt-4 border-t border-slate-100">
+                  <a
+                    href={`https://wa.me/919035054532?text=Hi! I want to book an appointment with ${doctor.name} (${doctor.specialty}).`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full py-3 bg-slate-50 hover:bg-slate-100 text-slate-800 font-extrabold text-[10px] tracking-widest uppercase rounded-xl border border-slate-200 flex items-center justify-center gap-2 transition"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-blue-600" />
+                    <span>Book Appointment</span>
+                  </a>
+                </div>
               </div>
-
-              {/* Action */}
-              <div className="p-6 md:p-8 pt-0">
-                <a
-                  href={`https://wa.me/919035054532?text=Hi! I want to book an appointment with ${doctor.name} (${doctor.specialty}).`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full py-3 bg-slate-50 hover:bg-slate-100 text-slate-700 font-extrabold text-[10px] tracking-wider uppercase rounded-xl border border-slate-200 flex items-center justify-center gap-2 transition"
-                >
-                  <Phone className="w-3.5 h-3.5 text-blue-600" />
-                  <span>Book Consultation</span>
-                </a>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
