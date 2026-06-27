@@ -36,7 +36,7 @@ export default function HomeView({ onPageChange, setSelectedServiceId }: HomeVie
   const whyChooseItems = [
     {
       title: "Experienced Specialists",
-      desc: "Our board-certified consultants have robust training background (e.g. Ex-military, international fellowships) ensuring advanced clinical care.",
+      desc: "Our board-certified consultants have robust training backgrounds (e.g., senior national specialists, international fellowships) ensuring advanced clinical care.",
       icon: Award,
       color: "border-blue-100 bg-blue-50/50 text-blue-700"
     },

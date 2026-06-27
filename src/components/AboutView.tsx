@@ -47,7 +47,7 @@ export default function AboutView() {
               Empathetic, Professional Medical Care At Dr1 Gene Hospital
             </h1>
             <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-              Located in the heart of Whitefield, Bangalore (Beside One World International School), Dr1 Gene Hospital has grown to become a cornerstone of primary and specialty healthcare. We bring together highly qualified medical professionals—including former military physicians, joint-replacement specialists, and aesthetics experts—to provide affordable clinical solutions.
+              Located in the heart of Whitefield, Bangalore (Beside One World International School), Dr1 Gene Hospital has grown to become a cornerstone of primary and specialty healthcare. We bring together highly qualified medical professionals—including senior clinical advisors, joint-replacement specialists, and aesthetics experts—to provide affordable clinical solutions.
             </p>
             <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">
               We understand that visiting a hospital can be overwhelming. Therefore, we have designed a premium clinical layout with warm lighting, highly sterilized consultation spaces, spacious lounge seating, and an in-house laboratory and pharmacy to keep your medical journey completely hassle-free.
@@ -166,7 +166,7 @@ export default function AboutView() {
             Meet Our Expert Clinical Team
           </h2>
           <p className="text-slate-500 font-medium mt-4 leading-relaxed text-sm">
-            Highly qualified consultants, former military medical officers, and specialists dedicated to providing top-tier patient care.
+            Highly qualified consultants, senior medical specialists, and board-certified experts dedicated to providing top-tier patient care.
           </p>
         </div>
 

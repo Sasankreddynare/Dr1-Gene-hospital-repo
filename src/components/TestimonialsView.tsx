@@ -263,22 +263,17 @@ export default function TestimonialsView() {
                   <div>
                     {/* Author & Header Info */}
                     <div className="flex items-start justify-between gap-4 mb-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm tracking-wide shadow-inner shrink-0">
-                          {rev.initials}
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center shrink-0">
+                          <User className="w-4 h-4 text-slate-400" />
                         </div>
                         <div>
-                          <div className="flex items-center gap-1.5">
-                            <h3 className="font-bold text-slate-900 text-sm leading-tight">
-                              {rev.name}
-                            </h3>
-                            <CheckCircle className="w-3.5 h-3.5 text-emerald-500" title="Verified Consultation" />
-                          </div>
+                          <h3 className="font-bold text-slate-900 text-sm leading-tight">
+                            {rev.name}
+                          </h3>
                           <div className="flex items-center gap-1 text-slate-400 text-[11px] mt-0.5">
                             <Calendar className="w-3 h-3" />
                             <span>{rev.date}</span>
-                            <span>•</span>
-                            <span className="text-emerald-600 font-semibold">{rev.source}</span>
                           </div>
                         </div>
                       </div>
