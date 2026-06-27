@@ -121,7 +121,7 @@ export default function ContactView() {
             <div className="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm aspect-video w-full">
               <iframe
                 title="Dr1 Gene Hospital Google Maps location"
-                src="https://maps.google.com/maps?q=Beside%20One%20World%20International%20School,%20Goravigere,%20Whitefield,%20Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Dr1%20Gene%20Hospital,%20Goravigere,%20Whitefield,%20Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-none filter brightness-95"
                 allowFullScreen={false}
                 loading="lazy"

@@ -9,7 +9,7 @@ export const HOSPITAL_CONTACT = {
   email: "healthcare@dr1gene.com",
   altEmail: "mohan.srinivas186@gmail.com",
   instagram: "https://www.instagram.com/dr1gene_hospital",
-  mapsLink: "https://share.google/xUTQzZdnckKvOAyKK",
+  mapsLink: "https://share.google/EpaolNOvF8i6JT3J6",
   mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8930432326756!2d77.7618035!3d13.0035882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0fbce1e7a469%3A0x7d6a5bf2ea8149e2!2sOne%20World%20International%20School!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
 };
 
