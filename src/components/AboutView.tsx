@@ -173,22 +173,15 @@ export default function AboutView() {
         {/* Seven Doctors Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {DOCTORS_DATA.map((doctor) => {
-            const isDerm = doctor.id === "dr-sushma";
             return (
               <div
                 key={doctor.id}
-                className={`bg-white rounded-2xl border border-slate-200 shadow-sm p-6 md:p-8 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-md hover:border-slate-300 ${
-                  isDerm ? "md:col-span-2 lg:col-span-3 border-emerald-100 bg-emerald-50/5" : ""
-                }`}
+                className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 md:p-8 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-md hover:border-slate-300"
               >
                 <div>
                   {/* Specialty Badge */}
                   <div className="mb-4">
-                    <span className={`px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider rounded-md border ${
-                      isDerm 
-                        ? "bg-emerald-50 text-emerald-700 border-emerald-200" 
-                        : "bg-blue-50 text-blue-700 border-blue-200"
-                    }`}>
+                    <span className="px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider rounded-md border bg-blue-50 text-blue-700 border-blue-200">
                       {doctor.specialty}
                     </span>
                   </div>
@@ -210,46 +203,11 @@ export default function AboutView() {
                     ))}
                   </div>
 
-                  {/* Dermatology Specific Skills Lists */}
-                  {isDerm && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-200">
-                      <div>
-                        <h4 className="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-3 flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
-                          Skin Related Problems
-                        </h4>
-                        <ul className="space-y-1 text-slate-600 text-xs font-semibold">
-                          {doctor.skinProblems?.map((prob, i) => (
-                            <li key={i} className="flex items-center gap-2">
-                              <span className="text-emerald-500">•</span>
-                              {prob}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-3 flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
-                          Skin Related Procedures
-                        </h4>
-                        <ul className="space-y-1 text-slate-600 text-xs font-semibold">
-                          {doctor.skinProcedures?.map((proc, i) => (
-                            <li key={i} className="flex items-center gap-2">
-                              <span className="text-emerald-500">•</span>
-                              {proc}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )}
-
                   {/* Timings */}
                   {doctor.timings && (
                     <div className="mt-4 pt-4 border-t border-slate-200">
-                      <p className="text-[10px] font-extrabold text-emerald-700 uppercase tracking-wider mb-1">Available Timings:</p>
-                      <p className="text-xs font-bold text-slate-800 leading-normal bg-emerald-50 border border-emerald-100 px-3 py-2 rounded-xl">
+                      <p className="text-[10px] font-extrabold text-blue-700 uppercase tracking-wider mb-1">Available Timings:</p>
+                      <p className="text-xs font-bold text-slate-800 leading-normal bg-blue-50 border border-blue-100 px-3 py-2 rounded-xl">
                         {doctor.timings}
                       </p>
                     </div>
