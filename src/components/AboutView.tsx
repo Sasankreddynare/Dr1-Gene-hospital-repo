@@ -176,6 +176,17 @@ export default function AboutView() {
               key={doctor.id}
               className="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-slate-300 overflow-hidden flex flex-col justify-between group transition-all duration-300 text-left"
             >
+              {doctor.imageUrl && (
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 border-b border-slate-200/40">
+                  <img
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src={doctor.imageUrl}
+                    alt={doctor.name}
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
+                </div>
+              )}
               <div className="p-6 md:p-8">
                 {/* Specialty Badge */}
                 <div className="mb-4">

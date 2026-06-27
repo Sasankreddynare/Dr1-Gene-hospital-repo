@@ -21,7 +21,7 @@ export const DOCTORS_DATA: Doctor[] = [
     qualifications: ["MBBS", "MD (General Medicine)", "DNB in Cardiology"],
     experience: "15+ Years Experience (Ex-Army Major)",
     bio: "Ex-Military physician and dedicated cardiologist specializing in preventive cardiology, coronary artery disease, heart failure management, and advanced cardiac diagnostic procedures.",
-    imageUrl: "https://images1-fabric.practo.com/doctor/308182/dr-jayaprasad-v-1481112270-5847fa4ee6fc2.jpg"
+    imageUrl: "/dr_jayaprasad_v.jpg"
   },
   {
     id: "dr-vinay",
