@@ -28,17 +28,14 @@ export default function Footer({ onPageChange }: FooterProps) {
         {/* Main Header / Info Bar */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-slate-900">
           
-          {/* Logo & Short text */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6">
+          {/* Logo */}
+          <div className="flex items-center">
             <button 
               onClick={() => handleNavClick("home")} 
               className="focus:outline-none block hover:opacity-90 transition-opacity text-left"
             >
-              <HospitalLogo variant="light" className="h-10" />
+              <HospitalLogo variant="light" className="h-16 sm:h-20" />
             </button>
-            <p className="text-slate-400 text-xs leading-normal max-w-sm font-medium border-l-0 sm:border-l sm:border-slate-800 sm:pl-4">
-              Beside One World International School. State-of-the-art therapies & diagnostic assessments in Whitefield.
-            </p>
           </div>
 
           {/* OPD Inline Hours */}

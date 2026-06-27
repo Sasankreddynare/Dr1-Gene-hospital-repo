@@ -45,10 +45,10 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14">
+        <div className="flex justify-between items-center py-2 min-h-[4.5rem] md:min-h-[5.5rem]">
           {/* Brand Logo */}
           <button onClick={() => handleNavClick("home")} className="focus:outline-none hover:opacity-95 transition-opacity">
-            <HospitalLogo variant="dark" />
+            <HospitalLogo variant="dark" className="h-16 md:h-20" />
           </button>
 
           {/* Desktop Navigation Links */}

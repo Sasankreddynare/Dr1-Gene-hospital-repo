@@ -15,10 +15,8 @@ export default function HospitalLogo({ className = "h-14", variant = "dark" }: H
         <img 
           src="/logo.png" 
           alt="Dr1 Gene Hospital Logo" 
-          className="h-full w-auto object-contain select-none"
+          className="h-full w-auto object-contain select-none rounded-sm"
           referrerPolicy="no-referrer"
-          // If we are in the footer (dark background) and need a light logo, we can apply an elegant filter to make it crisp on dark background
-          style={isLight ? { filter: "brightness(0) invert(1)" } : undefined}
           onError={(e) => {
             const img = e.currentTarget;
             const currentSrc = img.src;
