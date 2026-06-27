@@ -110,7 +110,7 @@ export default function ContactView() {
                   <div className="space-y-1 text-slate-500 text-xs font-semibold">
                     <p>Monday – Saturday: 08:00 AM – 09:00 PM</p>
                     <p>Sunday: 10:00 AM – 01:00 PM</p>
-                    <p className="text-red-500 font-bold">Emergency & Ambulance Support: 24/7 Live</p>
+                    <p className="text-red-500 font-bold">Emergency & Ambulance Support: Live Response</p>
                   </div>
                 </div>
               </div>

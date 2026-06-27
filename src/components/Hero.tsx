@@ -27,7 +27,7 @@ export default function Hero({ onPageChange }: HeroProps) {
         {/* Trust badge */}
         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-blue-100/50">
           <span className="flex h-2 w-2 rounded-full bg-blue-600"></span>
-          Available 24/7 in Whitefield
+          Advanced Healthcare in Whitefield
         </div>
 
         {/* Main Headline */}
