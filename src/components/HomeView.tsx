@@ -362,14 +362,14 @@ export default function HomeView({ onPageChange, setSelectedServiceId }: HomeVie
                     onPageChange("contact");
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-slate-900 hover:bg-slate-50 font-extrabold rounded-xl text-xs uppercase tracking-wider transition active:scale-95 duration-150"
+                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-slate-900 hover:bg-slate-50 font-extrabold rounded-xl text-xs uppercase tracking-wider transition active:scale-95 duration-150 whitespace-nowrap"
                 >
                   <span>Visit Contact Desk</span>
                 </button>
                 
                 <a
                   href={`tel:9035054532`}
-                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-800 hover:bg-slate-750 text-white font-bold rounded-xl text-xs border border-slate-700 transition"
+                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-800 hover:bg-slate-750 text-white font-bold rounded-xl text-xs border border-slate-700 transition whitespace-nowrap"
                 >
                   <Phone className="w-4 h-4 text-slate-400" />
                   <span>Call +91 9035054532</span>
@@ -377,7 +377,7 @@ export default function HomeView({ onPageChange, setSelectedServiceId }: HomeVie
                 
                 <button
                   onClick={handleWhatsApp}
-                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-xl text-xs transition"
+                  className="flex items-center justify-center gap-2 px-6 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-xl text-xs transition whitespace-nowrap"
                 >
                   <MessageSquare className="w-4 h-4 text-white fill-white/10" />
                   <span>WhatsApp Us</span>
